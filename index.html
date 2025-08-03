@@ -1,145 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HackCrafters | Coming Soon</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: "Courier New", Courier, monospace;
-    color: #0ff;
-    background-color: #000;
-    overflow: hidden;
-  }
-
-  .bgimg {
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-line-high-tech-electricity-image_430309.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-
-  .topleft {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
-  .topleft p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0f0;
-    text-shadow: 0 0 5px #0ff, 0 0 10px #0f0, 0 0 15px #0f0;
-  }
-
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .middle h1 {
-    font-size: 60px;
-    animation: glitch 1.5s infinite;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #0ff;
-  }
-
-  .middle p {
-    font-size: 35px;
-    color: #fff;
-    text-shadow: 0 0 5px #0ff;
-  }
-
-  hr {
-    margin: auto;
-    width: 50%;
-    border: 1px solid #0ff;
-  }
-
-  .bottomleft {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-  }
-
-  .social-icons a {
-    color: #0ff;
-    font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    color: #ff007f;
-    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
-  }
-
-  @keyframes glitch {
-    0% { text-shadow: 2px 2px #f00, -2px -2px #0ff; }
-    25% { text-shadow: -2px -2px #ff0, 2px 2px #00f; }
-    50% { text-shadow: 2px -2px #0f0, -2px 2px #f0f; }
-    75% { text-shadow: -2px 2px #f00, 2px -2px #0ff; }
-    100% { text-shadow: 2px 2px #f00, -2px -2px #0ff; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackCrafters</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="./images/image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
 </head>
 <body>
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/image.png" alt=""></a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>HackCrafters</p>
+  <section id="home" class="home">
+      <h1>Bring your Business Online</h1>
+      <h2>with HackCrafters</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h1 class="heading">about us</h1>
+    <div class="row">
+        <div class="content">
+            <h3>We make creativity work for your brand!</h3>
+            <p>Ours is a team of creatives that is brainstorming on great ideas,<b> all. the. time.</b><br>
+                With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</p>
+            <a href="#"><button class="btn">Read More</button></a>
+        </div>
+    </div>
+  </section>
+
+  <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12" id="service">
+          <h1>Our Services</h1>
+          <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
+            </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
+            <h6>Web App Development</h6>
+            <p>Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
+            <h6>Mobile App Development</h6>
+            <p>We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+            <h6>Digital Marketing</h6>
+            <p>The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+              <h6>IOT Projects</h6>
+                <p>We develop innovative IoT solutions for specific industry needs. Our expertise includes smart devices, automation systems, and connected infrastructure. We help clients enhance efficiency, gather real-time data, and create smarter experiences.</p>            
+            </div>
+          </div>
+      
+      <div class="col-lg-4 col-sm-6">
+        <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-magic"></i></span>
+          <h6>Cybersecurity</h6>
+            <p>We offer robust cybersecurity solutions to safeguard your business from online threats. From securing networks and data to implementing threat detection and response systems, we help protect your digital environment and ensure business continuity.</p>            
+        </div>
+      </div>
   </div>
+    </div>
+</div>
 
-  <div class="middle">
-    <h1>Coming Soon</h1>
-    <hr>
-    <p id="demo"></p>
-  </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-  <div class="bottomleft">
-    <p>Follow us:</p>
-    <div class="social-icons">
-      <a href="https://hackcrafters.in" target="_blank">Website</a>
-      <a href="https://instagram.com/hackcrafters0x1" target="_blank">Instagram</a>
+  <section class="counters">
+    <div class="container">
+        <div>
+            <i class="far fa-clock fa-4x"></i>
+            <div class="counter" data-target="300">0</div>
+            <h3>Working Hours</h3>
+        </div>
+        <div>
+            <i class="fas fa-gift fa-4x"></i>
+            <div class="counter" data-target="8">0</div>
+            <h3>Completed Projects</h3>
+        </div>
+        <div>
+            <i class="fas fa-users fa-4x"></i>
+            <div class="counter" data-target="5">0</div>
+            <h3>Happy Clients</h3>
+        </div>
+    </div>
+</section>
+
+<div class="pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="section-head-1 col-sm-12" style="text-align: center;">
+        <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
+        <p>
+          We build powerful, user-centric web and mobile applications for real-world impact.
+          From ERP systems to cross-platform mobile apps, our solutions are tailored to client needs.
+        </p>
+      </div>
+
+      <!-- ERP System -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_four"><i class="fas fa-network-wired"></i></span>
+          <h6>Smart ERP Suite</h6>
+          <p>
+            A fully customizable Enterprise Resource Planning (ERP) system for managing HR, payroll,
+            inventory, and customer relations. Built using Laravel + Vue.js for seamless performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- News App -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_five"><i class="fas fa-newspaper"></i></span>
+          <h6>Daily Digest - News App</h6>
+          <p>
+            A real-time news aggregator app built with Flutter and Firebase. Features include push notifications,
+            category filters, and admin dashboard for content management.
+          </p>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_six"><i class="fas fa-laptop-code"></i></span>
+          <h6>Interactive Portfolio Builder</h6>
+          <p>
+            A drag-and-drop portfolio site builder for freelancers and creatives.
+            Allows instant publishing and includes contact forms, resume upload, and analytics.
+          </p>
+        </div>
+      </div>
+
+      <!-- E-commerce Platform -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_four"><i class="fas fa-shopping-cart"></i></span>
+          <h6>CraftKart - E-Commerce Store</h6>
+          <p>
+            A scalable online shopping platform with payment gateway integration,
+            admin panel, product management, and order tracking. Built on Django + React.
+          </p>
+        </div>
+      </div>
+
+      <!-- College Portal -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_five"><i class="fas fa-university"></i></span>
+          <h6>College Management Portal</h6>
+          <p>
+            A cloud-based portal for colleges to manage students, results, faculty,
+            leave, notices, and event registration. Integrated with RFID & email alerts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Startup Landing Page -->
+      <div class="col-lg-4 col-sm-6">
+        <div class="item">
+          <span class="icon feature_box_col_six"><i class="fas fa-rocket"></i></span>
+          <h6>Startup Launchpad</h6>
+          <p>
+            Designed and developed modern landing pages for early-stage startups,
+            including newsletter capture, testimonials, and product showcase animations.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jun 12, 2025 00:00:00").getTime();
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+<div class="communicate">
+    <h3>Bring your Business Online</h3>
+    <a href="mailto:hello@hackcrafters.in"><button class="btn">Contact Now</button></a>
+</div>
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000)) / 1000);
 
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "We are live!";
-  }
-}, 1000);
-</script>
+<section id="contact" class="contact">
+    <h1 class="heading">get in touch</h1>
+</section>
+<div class="contact-in">
+    <div class="contact-form">
+        
+            
+           
+            <h2>Phone: +91 6203806265</h2>
+            <h2>Email: hello@hackcrafters.in</h2>
+            
+        
+    </div>
+    </div>
 
+    <section class="faq">
+      <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+      <div class="row">
+          <div class="accordion-container">
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How much will it cost?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
+                          Then we’ll be able to give you a ballpark figure. 
+                          If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How long it takes to design?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The time limit of any assignment is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you. 
+                          The main general delay in the making of a website is waiting for the content of the pages to be sent to us by the client.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>How do I associate with IT Company?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>The process begins when you contact us with your requirements. We analyze your requirements and respond to you. 
+                          On the basis of the further discussion, you can choose an engagement model that suits you the best. 
+                          After that, we begin the process of development.</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>Can you help my current site look more professional?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>Yes. Give us your requirements and we have experienced expertise to help you give a 
+                          new professional look that really wonders!</p>
+                  </div>
+              </div>
+              <div class="accordion">
+                  <div class="accordion-header">
+                      <span>+</span>
+                      <h3>When do I pay?</h3>
+                  </div>
+                  <div class="accordion-body">
+                      <p>For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs. 
+                          We understand that this is a big investment and want to help you budget for the expense in whatever way possible.
+                          We accept checks, PayPal, and all major credit cards.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <div class="footer">
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>About Us</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#about">About us</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#service">Our services</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
+                      <h4>Contact Us</h4>
+                      <p>
+                          Anand Nagar
+                          Bhopal , MP <br>
+                          <strong>Phone:</strong> +91 6203806265<br>
+                          <strong>Email:</strong> hello@hackcrafters.in<br>
+                      </p>
+
+                      <div class="social-links">
+                         
+                          <a href="https://www.instagram.com/HackCrafters"><i class="ion-logo-instagram"></i></a>
+                         
+                      </div>
+
+                  </div>
+
+                  
+
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
+                  Copyright &copy; 2025 HackCrafters.
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
 </body>
 </html>
